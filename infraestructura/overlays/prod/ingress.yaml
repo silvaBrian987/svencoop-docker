@@ -1,0 +1,12 @@
+apiVersion: traefik.io/v1alpha1
+kind: IngressRouteUDP
+metadata:
+  name: svencoop-server
+spec:
+  entryPoints:
+    - traefik # The entry point where Traefik Hub listens for incoming traffic
+  routes:
+    - services:
+        - name: svencoop-server # The name of the Kubernetes Service to route to
+          port: 27015
+          weight: 10

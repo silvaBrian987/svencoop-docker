@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svencoop-server
+spec:
+  selector:
+    app: svencoop-server
+  ports:
+    - protocol: UDP
+      port: 27015
+      targetPort: hlds-2
+    - protocol: UDP
+      port: 47170
+      targetPort: hlds-1
+  type: ClusterIP
