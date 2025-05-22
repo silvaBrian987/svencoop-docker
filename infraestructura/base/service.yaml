@@ -9,7 +9,9 @@ spec:
     - protocol: UDP
       port: 27015
       targetPort: hlds-2
+      name: hlds-2
     - protocol: UDP
       port: 47170
       targetPort: hlds-1
+      name: hlds-1
   type: ClusterIP
