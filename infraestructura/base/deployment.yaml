@@ -19,10 +19,14 @@ spec:
             - ./svends_run
           args:
             - -console
-            - -port 27015
-            - +maxplayers 8
-            - +log on
-            - +map "stadium4"
+            - -port 
+            - "27015"
+            - +maxplayers 
+            - "8"
+            - +log 
+            - "on"
+            - +map 
+            - "stadium4"
           ports:
             - containerPort: 47170
               name: hlds-1
