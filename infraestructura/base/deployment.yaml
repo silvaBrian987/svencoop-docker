@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: svends
-          image: registry.bgsystems.home/marine789/svencoop-docker:20210928203609
+          image: docker.io/marine789/svencoop-docker:20210928203609
           command:
             - ./svends_run
           args:
