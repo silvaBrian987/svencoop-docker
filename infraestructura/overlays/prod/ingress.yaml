@@ -4,7 +4,7 @@ metadata:
   name: svencoop-server
 spec:
   entryPoints:
-    - sveencoop
+    - svencoop
   routes:
     - services:
         - name: svencoop-server # The name of the Kubernetes Service to route to
