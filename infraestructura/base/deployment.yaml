@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: svencoop-server
-    spec:
+    spec:      
       containers:
         - name: svends
           image: docker.io/marine789/svencoop-docker:20210928203609
@@ -44,3 +44,5 @@ spec:
           envFrom:
             - configMapRef:
                 name: cm-svencoop-server
+  strategy:
+    type: Recreate
